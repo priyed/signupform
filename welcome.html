@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: auto;
+            text-align: center;
+        }
+
+        div {
+            width: 300px;
+            border: 2px solid teal;
+            margin: 50% auto;
+
+        }
+
+        div h3 {
+            font-size: 35px;
+        }
+
+        button {
+            margin: 20px;
+            padding: 10px;
+            width: 100px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            color: whitesmoke;
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3>Welcome!!!</h3>
+        <button id="log-out">Logout</button>
+    </div>
+</body>
+
+</html>
+
+<script>
+    let logout = document.getElementById("log-out");
+
+    logout.onclick = (e) => {
+        window.location.href = "index.html"
+    }
+</script>
