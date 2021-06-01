@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Register Form</title>
+</head>
+
+<body>
+    <div id="register-form" class="animate form">
+        <form action="welcome.html" method="POST">
+            <div>
+                <label for="username">Full Name</label>
+                <input type="text" name="username" placeholder="Name">
+                <span></span>
+            </div>
+            <div>
+                <label for="password">Choose Password</label>
+                <input type="password" name="password" placeholder="password">
+                <span></span>
+            </div>
+            <button id="register">Register</button>
+            <p>Already have an account? <a id="login-link" href="/index.html">login</a></p>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<script>
+    let register = document.getElementById("register")
+    register.onclick = (e) => {
+        e.preventDefault();
+        window.location.href = "welcome.html"
+    }
+</script>
